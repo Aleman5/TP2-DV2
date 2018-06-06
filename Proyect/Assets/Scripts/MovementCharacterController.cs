@@ -41,7 +41,7 @@ public class MovementCharacterController : MonoBehaviour
 		cc.Move (mov * Time.deltaTime);
 
         mov.y = 0;
-        anim.SetFloat("Velocity", mov.magnitude / maxSpeed);
+        anim.SetFloat("Velocity", mov.magnitude / maxSpeed, 0.1f, Time.deltaTime);
 
 		//Si luego de moverme toque el suelo reseteo la fuerza vertical a 0.
 		if (cc.isGrounded) 
