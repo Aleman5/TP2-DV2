@@ -53,8 +53,20 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AxisMovement.cs" />
      <Compile Include="Assets\Scripts\CameraLook.cs" />
-     <Compile Include="Assets\Scripts\ConstantMovement.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\Follower.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\Follower2.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\FreeCamController.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\KeepDistance.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\KeepDistanceExact.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\Looker.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\LookerQuaternion.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\ProximityDetector.cs" />
+     <Compile Include="Assets\Scripts\claseInterpolaciones\RandomRotate.cs" />
      <Compile Include="Assets\Scripts\MovementCharacterController.cs" />
+ <Reference Include="Facebook.Unity.Settings">
+ <HintPath>K:/Desarrollo de Videojuegos II/TP2-DV2/Proyect/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
