@@ -326,6 +326,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AxisMovement.cs" />
     <Compile Include="Assets\Scripts\CameraLook.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\Follower.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\Follower2.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\FreeCamController.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\KeepDistance.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\KeepDistanceExact.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\Looker.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\LookerQuaternion.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\ProximityDetector.cs" />
+    <Compile Include="Assets\Scripts\claseInterpolaciones\RandomRotate.cs" />
     <Compile Include="Assets\Scripts\MovementCharacterController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

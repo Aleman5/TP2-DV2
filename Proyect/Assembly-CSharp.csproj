@@ -65,7 +65,7 @@
      <Compile Include="Assets\Scripts\claseInterpolaciones\RandomRotate.cs" />
      <Compile Include="Assets\Scripts\MovementCharacterController.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>K:/Desarrollo de Videojuegos II/TP2-DV2/Proyect/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>G:/Desarrollo de Videojuegos II/TP2-DV2/Proyect/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
