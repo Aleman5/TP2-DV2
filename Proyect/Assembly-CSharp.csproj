@@ -53,20 +53,34 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AxisMovement.cs" />
      <Compile Include="Assets\Scripts\CameraLook.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\Follower.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\Follower2.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\FreeCamController.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\KeepDistance.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\KeepDistanceExact.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\Looker.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\LookerQuaternion.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\ProximityDetector.cs" />
-     <Compile Include="Assets\Scripts\claseInterpolaciones\RandomRotate.cs" />
+     <Compile Include="Assets\Scripts\clases\Animaciones\PhysicsAnimation.cs" />
+     <Compile Include="Assets\Scripts\clases\Animaciones\PhysicsMovement.cs" />
+     <Compile Include="Assets\Scripts\clases\CharacterController\ConstantMovement.cs" />
+     <Compile Include="Assets\Scripts\clases\CharacterController\Shooter.cs" />
+     <Compile Include="Assets\Scripts\clases\CharacterController\ShooterCharged.cs" />
+     <Compile Include="Assets\Scripts\clases\CharacterController\ShooterCharged2.cs" />
+     <Compile Include="Assets\Scripts\clases\CharacterController\ShooterFireRate.cs" />
+     <Compile Include="Assets\Scripts\clases\CharacterController\ShooterFireRate2.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\Follower.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\Follower2.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\FreeCamController.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\KeepDistance.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\KeepDistanceExact.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\Looker.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\LookerQuaternion.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\ProximityDetector.cs" />
+     <Compile Include="Assets\Scripts\clases\Interpolations\RandomRotate.cs" />
+     <Compile Include="Assets\Scripts\clases\NavMesh\EjemploNavMesh.cs" />
+     <Compile Include="Assets\Scripts\clases\NavMesh\EjemploSeguidor.cs" />
+     <Compile Include="Assets\Scripts\clases\NavMesh\Path.cs" />
+     <Compile Include="Assets\Scripts\clases\Rays\CameraBoom.cs" />
+     <Compile Include="Assets\Scripts\clases\Rays\EjemploDisparo3p.cs" />
+     <Compile Include="Assets\Scripts\clases\Rays\EjemploRayo1.cs" />
+     <Compile Include="Assets\Scripts\clases\Rays\EjemploRayoDañador.cs" />
+     <Compile Include="Assets\Scripts\clases\Rays\EjemploSeleccionMovimiento.cs" />
+     <Compile Include="Assets\Scripts\clases\Rays\Vida.cs" />
      <Compile Include="Assets\Scripts\MovementCharacterController.cs" />
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>G:/Desarrollo de Videojuegos II/TP2-DV2/Proyect/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
