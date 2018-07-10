@@ -18,29 +18,33 @@ public class Enemy1_Movement : MonoBehaviour
 
     void Update()
     {
-        Vector3 diff = target.position - transform.position;
-        Vector3 dir = diff.normalized;
-        float dist = diff.magnitude;
-
-        transform.forward = dir;
-        
-        if (dist < distanceMax)
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
         {
-            if (dist < distanceMin)
+            Vector3 diff = target.position - transform.position;
+            diff.y = 0;
+            Vector3 dir = diff.normalized;
+            float dist = diff.magnitude;
+
+            transform.forward = dir;
+
+            if (dist < distanceMax)
             {
-                if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+                if (dist < distanceMin)
                 {
-                    anim.SetTrigger("Attack");
-                    anim.SetBool("Moving", false);
+                    if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+                    {
+                        anim.SetTrigger("Attack");
+                        anim.SetBool("Moving", false);
+                    }
+                }
+                else if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+                {
+                    transform.position += dir * speed * Time.deltaTime;
+                    anim.SetBool("Moving", true);
                 }
             }
-            else if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
-            {
-                transform.position += dir * speed * Time.deltaTime;
-                anim.SetBool("Moving", true);
-            }
+            else
+                anim.SetBool("Moving", false); // Not moving
         }
-        else
-            anim.SetBool("Moving", false); // Not moving
     }
 }
