@@ -51,8 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AxisMovement.cs" />
-     <Compile Include="Assets\Scripts\CameraLook.cs" />
      <Compile Include="Assets\Scripts\clases\Animaciones\PhysicsAnimation.cs" />
      <Compile Include="Assets\Scripts\clases\Animaciones\PhysicsMovement.cs" />
      <Compile Include="Assets\Scripts\clases\CharacterController\ConstantMovement.cs" />
@@ -74,13 +72,18 @@
      <Compile Include="Assets\Scripts\clases\NavMesh\EjemploNavMesh.cs" />
      <Compile Include="Assets\Scripts\clases\NavMesh\EjemploSeguidor.cs" />
      <Compile Include="Assets\Scripts\clases\NavMesh\Path.cs" />
-     <Compile Include="Assets\Scripts\clases\Rays\CameraBoom.cs" />
+     <Compile Include="Assets\Scripts\clases\Optimizations\TestIndirectLight.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\EjemploDisparo3p.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\EjemploRayo1.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\EjemploRayoDañador.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\EjemploSeleccionMovimiento.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\Vida.cs" />
-     <Compile Include="Assets\Scripts\MovementCharacterController.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Enemy1_Movement.cs" />
+     <Compile Include="Assets\Scripts\Player&amp;Camera\AxisMovement.cs" />
+     <Compile Include="Assets\Scripts\Player&amp;Camera\CameraCollapse.cs" />
+     <Compile Include="Assets\Scripts\Player&amp;Camera\CameraLimit.cs" />
+     <Compile Include="Assets\Scripts\Player&amp;Camera\CameraLook.cs" />
+     <Compile Include="Assets\Scripts\Player&amp;Camera\MovementCharacterController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
