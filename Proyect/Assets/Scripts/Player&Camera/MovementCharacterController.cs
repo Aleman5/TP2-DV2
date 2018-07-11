@@ -79,5 +79,7 @@ public class MovementCharacterController : MonoBehaviour
                     secondJump = false;
                 }
         }
+        else if (Input.GetKeyDown(KeyCode.Space))
+            Application.LoadLevel(Application.loadedLevel);
     }
 }
