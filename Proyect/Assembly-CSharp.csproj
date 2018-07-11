@@ -78,7 +78,9 @@
      <Compile Include="Assets\Scripts\clases\Rays\EjemploRayoDañador.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\EjemploSeleccionMovimiento.cs" />
      <Compile Include="Assets\Scripts\clases\Rays\Vida.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Enemy1_Movement.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Enemy1_Controller.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Enemy2_Controller.cs" />
+     <Compile Include="Assets\Scripts\General\AutoDestroy.cs" />
      <Compile Include="Assets\Scripts\Player&amp;Camera\AxisMovement.cs" />
      <Compile Include="Assets\Scripts\Player&amp;Camera\CameraCollapse.cs" />
      <Compile Include="Assets\Scripts\Player&amp;Camera\CameraLimit.cs" />

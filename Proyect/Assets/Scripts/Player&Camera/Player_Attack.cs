@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class Player_Attack : MonoBehaviour
 {
+    Animator anim;
+
     [SerializeField] float range;
     [SerializeField] LayerMask layerHit;
     [SerializeField] ParticleSystem hitParticles;
 
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Death"))
         {
-            
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit, range, layerHit))
+            if (Input.GetButtonDown("Fire1"))
             {
-                Debug.Log("Attack!");
-                Animator anim = hit.transform.GetComponent<Animator>();
-                anim.SetBool("Death", true);
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.forward, out hit, range, layerHit))
+                {
+                    // Setting Death animation as true
+                    Animator hitAnim = hit.transform.GetComponent<Animator>();
+                    hitAnim.SetBool("Death", true);
 
-                hitParticles.transform.position = hit.point;
-                hitParticles.Play();
+                    // Disabling collider of the Enemy
+                    Collider hitColl = hit.transform.GetComponent<Collider>();
+                    hitColl.enabled = !hitColl.enabled;
+
+                    // Instantiating the particles from where the enemy was hitted
+                    Instantiate(hitParticles, hit.point, hit.transform.rotation);
+                }
             }
         }
+        
     }
 }
